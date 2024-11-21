@@ -50,16 +50,9 @@ def modifyData(lachman,cajon):
     caracteristicas_top_4=np.array(caracteristicas)
     return(caracteristicas_top_4)
 
-pipeline = joblib.load('ProyectoFinal/vot_pipeline.sav')
 # Title of the app
 st.title('Clasificador de lesions de LCA')
-st.subheader(f"Resultados de clasificación del ")
-image_1, image_2 = ("ProyectoFinal/assets/rfcr.jpg", "ProyectoFinal/assets/rfcm.jpg")
-col1, col2 = st.columns(2)
-with col1:
-    st.image(image_1, caption="Reporte de clasificación", use_column_width=True)
-with col2:
-    st.image(image_2, caption="Matriz de confusión", use_column_width=True)
+
 """
 # Cargar modelos desde archivos .pkl
 def load_model(file_path):
