@@ -50,7 +50,7 @@ def modifyData(lachman,cajon):
     caracteristicas_top_4=np.array(caracteristicas)
     return(caracteristicas_top_4)
 
-pipeline = joblib.load('ProyectoFinal/vot_pipeline.pkl')
+pipeline = joblib.load('ProyectoFinal/svm_pipeline.pkl')
 # Title of the app
 st.title('Clasificador de lesions de LCA')
 st.subheader(f"Resultados de clasificación del ")
