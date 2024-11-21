@@ -52,8 +52,6 @@ def modifyData(lachman,cajon):
 
 # Title of the app
 st.title('Clasificador de lesions de LCA')
-
-"""
 # Cargar modelos desde archivos .pkl
 def load_model(file_path):
     with open(file_path, 'rb') as file:
@@ -114,4 +112,4 @@ if st.button("Clasificar"):
         st.success(f"La maniobra analizada resultó {clases[int(prediction[0])]} a una lesión de LCA.")
     except Exception as e:
         st.error(f"Error: {e}")
-"""
+
