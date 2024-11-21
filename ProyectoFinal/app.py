@@ -60,9 +60,7 @@ def load_model(file_path):
 
 # Rutas a los archivos de modelos
 model_paths = {
-    "Modelo 1: RandomForest": "ProyectoFinal/rf_pipeline.pkl",
     "Modelo 2: SVM": "ProyectoFinal/svm_pipeline.pkl",
-    "Modelo 3: Voting Ensamble": "ProyectoFinal/vot_pipeline.pkl",
 }
 
 models = {name: load_model(path) for name, path in model_paths.items()}
@@ -75,9 +73,7 @@ selected_model = models[selected_model_name]
 
 # Mostrar imágenes asociadas al modelo seleccionado
 image_paths = {
-    "Modelo 1: RandomForest": ("ProyectoFinal/assets/rfcr.jpg", "ProyectoFinal/assets/rfcm.jpg"),
     "Modelo 2: SVM": ("ProyectoFinal/assets/svmcr.jpg", "ProyectoFinal/assets/svmcm.jpg"),
-    "Modelo 3: Voting Ensamble": ("ProyectoFinal/assets/vocr.jpg", "ProyectoFinal/assets/vocm.jpg"),
 }
 st.subheader(f"Resultados de clasificación del {selected_model_name}")
 image_1, image_2 = image_paths[selected_model_name]
